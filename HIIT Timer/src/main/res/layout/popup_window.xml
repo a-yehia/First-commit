@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:background="#222222">
+
+
+    <EditText
+
+        android:id="@+id/lowID"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#0272A6" />
+
+    <EditText
+        android:id="@+id/highID"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lowID"
+        android:layout_alignStart="@+id/lowID"
+        android:layout_below="@+id/lowID"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#0272A6" />
+
+    <EditText
+        android:id="@+id/intervalsID"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/highID"
+        android:layout_alignStart="@+id/highID"
+        android:layout_below="@+id/highID"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#0272A6" />
+
+    <TextView
+        style="@style/texts"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="High Interval (Seconds)"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/highID"
+        android:layout_alignBottom="@+id/highID"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <TextView
+        style="@style/texts"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Low Interval (Seconds)"
+        android:textSize="20dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        style="@style/texts"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Intervals"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/intervalsID"
+        android:layout_alignBottom="@+id/intervalsID"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+</RelativeLayout>
